@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #ffffff;
+  --color-secondary: #f8f9fa;
+  --color-accent: #007bff;
+  --color-text-primary: #212529;
+  --color-text-secondary: #495057;
+}
+
+.dark {
+  --color-primary: #343a40;
+  --color-secondary: #495057;
+  --color-accent: #17a2b8;
+  --color-text-primary: #f8f9fa;
+  --color-text-secondary: #adb5bd;
+}
+
+@font-face {
+  font-family: 'noord';
+  src: url('/public/NoordRegular.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'noord', sans-serif;
+  background-color: var(--color-primary);
+  color: var(--color-text-primary);
+}
+
